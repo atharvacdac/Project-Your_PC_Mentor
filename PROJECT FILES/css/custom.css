@@ -1,0 +1,32 @@
+.button {
+    background-color: #392388; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius:20px;
+    cursor: pointer;
+  }
+  .button:hover{
+    color: aliceblue;
+    background-color: #170c3d;
+  }
+  .custom_font{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .custom_nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .custom_section{
+    position: relative;
+    top: 70px;
+  }
+ 
