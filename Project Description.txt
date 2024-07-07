@@ -18,8 +18,8 @@ Solution: Our platform offers a unique blend of technology and human expertise t
 
 Custom Build Philosophy: At Your PC Mentor, we believe that every individual has unique computing needs. That's why we offer custom-built PCs that cater to specific requirements, whether it's for gaming, video editing, or general use. Our team of experts works closely with clients to understand their needs and design a bespoke build that meets their budget and performance expectations. We take pride in our attention to detail, ensuring that every custom-built PC is crafted with precision and care.
 
-Technology Stack: Will Update it!
+Technology Stack: This will be updated soon!
 
 Contributing: If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request. All contributions are welcome!
 
-License: Will Update it!
+License: This will be updated soon!
