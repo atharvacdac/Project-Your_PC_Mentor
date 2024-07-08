@@ -1,0 +1,154 @@
+Class Diagram-
+
+
++---------------+
+|  Client      |
++---------------+
+| - clientId: string  |
+| - name: string      |
+| - email: string     |
+| - phoneNumber: string|
+| - address: string   |
++---------------+
+       | 1..*
+       | (A client can have multiple devices)
+       v
++---------------+
+|  Device      |
++---------------+
+| - deviceId: string  |
+| - clientId: string  |
+| - deviceType: string |
+| - deviceModel: string|
+| - deviceSerial: string|
+| - status: string    |
++---------------+
+       | 1..*
+       | (A device can have multiple service requests)
+       v
++---------------+
+| ServiceRequest |
++---------------+
+| - serviceRequestId: string |
+| - clientId: string      |
+| - deviceId: string      |
+| - serviceRequestDate: date |
+| - serviceRequestStatus: string |
+| - type: string          |
+| - priority: string      |
++---------------+
+       | 1..*
+       | (A service request can have multiple chatbot analyses)
+       v
++---------------+
+| ChatbotAnalysis |
++---------------+
+| - chatbotAnalysisId: string |
+| - serviceRequestId: string  |
+| - analysisResult: string    |
++---------------+
+       | 1..*
+       | (A service request can have multiple repair jobs)
+       v
++---------------+
+| RepairJob     |
++---------------+
+| - repairJobId: string    |
+| - serviceRequestId: string |
+| - techExpertId: string    |
+| - repairJobStatus: string |
++---------------+
+       | 1..*
+       | (A tech expert can be assigned to multiple repair jobs)
+       v
++---------------+
+| TechExpert   |
++---------------+
+| - techExpertId: string  |
+| - name: string          |
+| - email: string         |
+| - phoneNumber: string   |
+| - expertise: string     |
++---------------+
+       | 1..*
+       | (A delivery partner can deliver multiple orders)
+       v
++---------------+
+| DeliveryPartner |
++---------------+
+| - deliveryId: string    |
+| - name: string          |
+| - email: string         |
+| - phoneNumber: string   |
++---------------+
+       | 1..*
+       | (A client can place multiple orders)
+       v
++---------------+
+| Order        |
++---------------+
+| - orderId: string      |
+| - clientId: string      |
+| - customPcId: string    |
+| - orderDate: date       |
+| - orderStatus: string   |
+| - totalCost: number     |
++---------------+
+       | 1..*
+       | (An order can have multiple custom PC builds)
+       v
++---------------+
+| CustomPcBuild |
++---------------+
+| - customPcId: string  |
+| - clientId: string      |
+| - buildType: string     |
+| - budget: number        |
+| - buildStatus: string   |
++---------------+
+       | 1..*
+       | (A custom PC build can have multiple PC components)
+       v
++---------------+
+| PcComponent  |
++---------------+
+| - pcComponentId: string |
+| - componentType: string |
+| - componentModel: string|
+| - componentPrice: number|
++---------------+
+       | 1..*
+       | (A PC component can be part of multiple component inventories)
+       v
++---------------+
+| ComponentInventory |
++---------------+
+| - componentInvId: string |
+| - pcComponentId: string  |
+| - quantity: number       |
+| - stockStatus: string    |
++---------------+
+       | 1..*
+       | (An order can have multiple payments)
+       v
++---------------+
+| Payment      |
++---------------+
+| - paymentId: string    |
+| - orderId: string       |
+| - paymentMethod: string |
+| - paymentDate: date     |
+| - paymentStatus: string |
++---------------+
+       | 1..*
+       | (A client can leave multiple reviews)
+       v
++---------------+
+| Review       |
++---------------+
+| - reviewId: string     |
+| - clientId: string      |
+| - serviceRequestId: string |
+| - reviewRating: number  |
+| - reviewComment: string |
++---------------+
