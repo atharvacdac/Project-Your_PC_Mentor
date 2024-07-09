@@ -152,3 +152,4 @@ Class Diagram-
 | - reviewRating: number  |
 | - reviewComment: string |
 +---------------+
+-----------------------------------------------
