@@ -23,3 +23,5 @@ Technology Stack: This will be updated soon!
 Contributing: If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request. All contributions are welcome!
 
 License: This will be updated soon!
+
+There are so many additional features that are yet to be implemented.
